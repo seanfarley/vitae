@@ -4,25 +4,33 @@
 	<applicant>
 		<name>Sean Farley</name>
 		<address>
-			<street>5407 Nicholson Dr. Apt A</street>
+			<street>PO Box 16102</street>
 			<city>Baton Rouge</city>
 			<state>LA</state>
-			<zip>70820</zip>
+			<zip>70893</zip>
 		</address>
 		<phone>(225) 284-7436</phone>
 		<email>sean@seanfarley.org</email>
 	</applicant>
-	<objective>
-		Bring math theory into application and explore what math can bring to other fields. I believe this to be the fastest way to improve all fields of science.
-	</objective>
 	<education>
 		<institution>
-			<name>Louisiana State University, A&amp;M</name>
+			<name>Louisiana State University</name>
 			<address>
 				<city>Baton Rouge</city>
 				<state>LA</state>
 			</address>
-			<degree completed="false">Bachelor of Science in Mathematics, Minor in Physics and Chinese</degree>
+			<degree completed="false">Doctor of Philosophy, Mathematics</degree>
+			<status>PhD Qualified</status>
+			<mentor>Blaise Bourdin</mentor>
+			<time>2006-current</time>
+		</institution>
+		<institution>
+			<name>Louisiana State University</name>
+			<address>
+				<city>Baton Rouge</city>
+				<state>LA</state>
+			</address>
+			<degree completed="true">Bachelor of Science in Mathematics, Minor in Physics and Chinese</degree>
 			<time>2001-2006</time>
 		</institution>
 		<institution>
@@ -32,7 +40,7 @@
 				<state>China</state>
 			</address>
 			<degree completed="true">Minor in Chinese</degree>
-			<time>Summer 2005</time>
+			<time>2005</time>
 		</institution>
 		<institution>
 			<name>Louisiana School for Math, Science, and the Arts</name>
@@ -44,7 +52,34 @@
 			<time>1999-2001</time>			
 		</institution>
 	</education>
+	<courses>
+		<course group="applied" dept="" number="XD-II">Fluid Dynamics and Computational Methods</course>		
+		<course group="applied" number="7320">Ordinary Differential Equations</course>
+		<course group="applied" number="7390">Finite Element Method: Analysis and Implementation</course>		
+		<course group="applied" number="7380">Elliptic Solvers: Advanced parallel implementation &amp; related topics</course>
+		<course group="applied" number="7380">Fast Solvers</course>		
+		<course group="applied" number="7280">Numerical Linear Algebra</course>
+		<course group="applied" number="7390">Applications of spectral theory in the material sciences</course>
+		<course number="7200">Algebra I</course>
+		<course number="7311">Real Analysis</course>
+		<course number="7510">Topology</course>		
+		<course number="7350">Complex Analysis</course>		
+		<course number="7380">Complex Analysis II</course>
+		<course number="7550">Differential Geometry</course>
+	</courses>
 	<experience>
+		<employment>
+			<title>Graduate Assistantship</title>
+			<time>Fall 2007</time>
+			<employer>Blaise Bourdin</employer>
+			<address>
+				<street>344 Lockett Hall</street>
+				<city>Baton Rouge</city>
+				<state>LA</state>
+				<zip>70803</zip>
+			</address>
+			<job>Teaching assistant for a graduate level class involving writing FEM code in C/C++ with PETSc; cluster maintenance </job>
+		</employment>
 		<employment>
 			<title>Research Programmer</title>
 			<time>Spring 2006</time>
@@ -55,7 +90,7 @@
 				<state>LA</state>
 				<zip>70803</zip>
 			</address>
-			<job>Parallel programming using MPI, PETSc, and Cactus; structuring data, scatter and gather among processors; Fortran90</job>
+			<job>Parallel programming using MPI and PETSc; structuring data, scatter and gather among processors</job>
 		</employment>
 		<employment>
 			<title>Programmer</title>
@@ -137,40 +172,23 @@
 		</employment>
 	</experience>
 	<qualifications>
-		<qualification>Over 5 years experience in contributing and compiling open source projects such as Apache Web Server, MySQL, PHP, OS Kernels, etc.</qualification>
+		<qualification>Over 5 years experience in  open source projects such as Apache Web Server, MySQL, PHP, OS Kernels, etc.</qualification>
 		<qualification>9 years programming experience with C/C++, Java, Visual Basic, Perl, PHP, JavaScript, HTML, and SQL including much experience with Visual C++, C#, and .NET Applications</qualification>
 		<qualification>Design, implementation, and maintenance of databases</qualification>
-		<qualification>Compiled, setup, and maintained DHCP, DNS, and Email servers on FreeBSD and other *nix operating systems</qualification>
+		<qualification>Compiled, setup, and maintained DHCP, DNS, LDAP, Kerberos and Email servers on FreeBSD and other *nix operating systems</qualification>
 		<qualification>10 years computer experience (DOS, Windows, *nix and *BSD platforms)</qualification>
-		<qualification>50+ wpm qwerty, 20 wpm left-handed dvorak</qualification>
-		<qualification>Office experience: faxing, copying, filing, answering phone, etc.</qualification>
 		<qualification>Extensive academic and work experience in computer related domains: design patterns, software design, web development, networking, etc.</qualification>
-		<qualification>Outstanding background in mathematics</qualification>
-		<qualification>Solid background in physics</qualification>
 	</qualifications>
 	<awards>
-		<award>Graduated with distinction in computer science (senior project: A JSP/ODBC Client/Server Multithread Registration Package)</award>
+		<award>Graduated high school with distinction in computer science (senior project: A JSP/ODBC Client/Server Registration Package)</award>
 		<award>First place in LSU sponsored computer programming competition.</award>
 		<award>Louisiana School Excellence Awards in Computer Science, Physics, and Mathematics</award>
-		<award>Fourth place in Mathematics Assiociation of America</award>
+		<award>First place in Mathematics Association of America</award>
 	</awards>
 	<extracurricular>
 		<activity>Math Club - President</activity>
 		<activity>Computer Science Club - President</activity>
 		<activity>Mu Alpha Theta Club - Vice-President</activity>
 		<activity>Boy Scouts of America - Eagle Scout (4 palms)</activity>
-		<activity>Competition soccer and hockey</activity>
-		<activity>Tutoring</activity>
 	</extracurricular>
-	<courses>
-		<semester date="Fall 2001">
-			<course>Advanced Calculus I (Math 4035)</course>
-		</semester>
-	</courses>
-	<references>
-		<reference>
-			<name></name>
-			<phone></phone>
-		</reference>
-	</references>
 </resume>
