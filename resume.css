@@ -1,0 +1,65 @@
+.header {
+	font-size: 8pt;
+	color: black;
+	font-weight: light;	
+}
+
+.rightpadding {
+	padding-right: .4cm;
+}
+
+.name {
+	font-size: 20pt;
+	color: black;
+	font-weight: bold;
+	padding-bottom: .15cm;
+}
+
+.title {
+	font-size: 12pt;
+	color: black;
+	background-color: gray;
+	font-weight: bold;
+	vertical-align: top;
+	border-color: white;
+	border-style: double;
+}
+
+.subtitle {
+	font-weight: bold;
+	list-style-type: circle;
+}
+
+.section {
+	font-size: 10pt;
+	color: black;
+	font-weight: 100;
+	text-indent: .5in;
+}
+
+ul.list {
+	list-style-type: square;
+	list-style-position: outside; 
+	font-size: 10pt;
+	color: black;
+	font-weight: 100;
+}
+
+.degree {
+	font-size: 10pt;
+	color: black;
+	font-weight: bold;
+}
+
+.schoolname {
+	font-size: 10pt;
+	color: black;
+	f
+	ont-weight: lighter;
+}
+.time {
+	font-size: 10pt;
+	color: black;
+	font-weight: lighter;
+	float: right;
+}

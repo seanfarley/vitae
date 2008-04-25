@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="resume.xsl"?>
+<resume>
+	<applicant>
+		<name>Sean Farley</name>
+		<address>
+			<street>5407 Nicholson Dr. Apt A</street>
+			<city>Baton Rouge</city>
+			<state>LA</state>
+			<zip>70820</zip>
+		</address>
+		<phone>(225) 284-7436</phone>
+		<email>sean@seanfarley.org</email>
+	</applicant>
+	<objective>
+		An position working on a small team that allows me to continue gathering knowledge of software/hardware engineering and utilize my math and programming experience to bring creative and innovative solutions to problems.
+	</objective>
+	<education>
+		<institution>
+			<name>Louisiana State University, A&amp;M</name>
+			<address>
+				<city>Baton Rouge</city>
+				<state>LA</state>
+			</address>
+			<degree completed="false">Bachelor of Science in Mathematics, Minor in Physics and Chinese</degree>
+			<time>2001-2006</time>
+		</institution>
+		<institution>
+			<name>Beijing Normal University</name>
+			<address>
+				<city>Beijing</city>
+				<state>China</state>
+			</address>
+			<degree completed="true">Minor in Chinese</degree>
+			<time>Summer 2005</time>
+		</institution>
+		<institution>
+			<name>Louisiana School for Math, Science, and the Arts</name>
+			<address>
+				<city>Natchitoches</city>
+				<state>LA</state>
+			</address>
+			<degree completed="true">High School Diploma</degree>
+			<time>1999-2001</time>
+		</institution>
+	</education>
+	<experience>
+		<employment employer="Blaise Bourdin">
+			<title>Research Programmer</title>
+			<time>Spring 2006</time>
+			<address>
+				<street>344 Lockett Hall</street>
+				<city>Baton Rouge</city>
+				<state>LA</state>
+				<zip>70803</zip>
+			</address>
+			<job>
+				Programmed parallel code using MPI, PETSc, and Cactus; Using Metis and ParMetis to partition meshes from large sets of data for finite elements.
+			</job>
+		</employment>
+		<employment employer="Velocity Squared, LLC">
+			<title>Programmer</title>
+			<time>2003-2006</time>
+			<address>
+				<street>7290 Wrenwood Blvd Suite E</street>
+				<city>Baton Rouge</city>
+				<state>LA</state>
+				<zip>70809</zip>
+			</address>
+			<job>
+				Worked on small teams using .Net 1.0-2.0 for web services. Extensive use of object oriented programming and design patterns. Managed many projects, among which, two projects written in C#: a library that used reflection to interface with a database, with generics, interfaces, abstract classes and object data source to utilize .Net 2.0; and a program that connected to a web service and print photo templates based on xml, employing design patterns such as singleton, director(?), and adapter. Learned and assimilated many APIs and practices
+			</job>
+			<job>
+				Worked with small teams to solve numerous business and technical problems. Use of databases, threads, security, web services, xml were highly used.
+			</job>
+		</employment>
+		<employment employer="Mindcreek, Inc.">
+			<title>Programmer</title>
+			<time>2002-2003</time>
+			<address>
+				<street>7117 Florida Blvd</street>
+				<city>Baton Rouge</city>
+				<state>LA</state>
+				<zip>70806</zip>
+			</address>
+			<job>
+				Designed applications with database access using Microsoft .NET specifically C# and VB.NET; configured hardware and server software.
+			</job>
+		</employment>
+		<employment employer="Louisiana Department of Education">
+			<title>Head Programmer</title>
+			<time>2001-2002</time>
+			<address>
+				<street>2758-D Brightside St.</street>
+				<city>Baton Rouge</city>
+				<state>LA</state>
+				<zip>70852</zip>
+			</address>
+			<job>
+				Served as Web developer for new statewide online lesson plans. Trained teachers on educational technology such as Photoshop and Whiteboard input. Used Microsoft SQL Server 2000, php, perl and blackboard.
+			</job>
+			<job>Designed online web applications with extensive database access using PHP; created graphics for web pages; configured hardware, installed software, and taught workshops on Javascript, SQL, and Adobe Photoshop 6.</job>
+		</employment>
+		<employment employer="Joel Tohline">
+			<title>Virtual Reality / 3D Programmer</title>
+			<time>2001-2002</time>
+			<address>
+				<street>202 Nicholson Hall</street>
+				<city>Baton Rouge</city>
+				<state>LA</state>
+				<zip>70803</zip>
+			</address>
+			<job>
+				Worked with a general relativity research group that used OpenGL and CAVE implemented with C++ libraries to utilize virtual reality aspects of the SGI ImmersaDesk on modeling binary stars.
+			</job>
+		</employment>
+		<employment employer="Louisiana School for Math, Science, and the Arts">
+			<title>Database/Network Technician</title>
+			<time>June 2001</time>
+			<address>
+				<city>Natchitoches</city>
+				<state>LA</state>
+			</address>
+			<job>
+				Designed, implemented, and tested database/network software, such as MySQL, Microsoft SQL Server, and Microsoft Access
+			</job>
+		</employment>
+		<employment employer="Everett McCoy">
+			<title>Database/Dynamic Web Programmer</title>
+			<time>2000-2001</time>
+			<address>
+				<city>Natchitoches</city>
+				<state>LA</state>
+			</address>
+			<job>
+				Designed and implemented web-based programs for students and faculty, utilizing server side languages such as PHP, Java Server Pages, and Perl. Wrote a complete online application for registering students for classes and seminars. Designed, implemented, and tested database/network software, such as MySQL, Microsoft SQL Server, and Microsoft Access. Created web pages using HTML, CSS, and JavaScript for faculty.
+			</job>
+			<job>
+				Designed and implemented web-based programs for students and faculty, utilizing server side languages such as PHP, Java Server Pages, and Perl. Also wrote a complete online application for registering students for classes and seminars.
+			</job>
+		</employment>
+		<employment employer="Louisiana School for Math, Science, and the Arts">
+			<title>Web Programmer</title>
+			<time>1999-2000</time>
+			<address>
+				<city>Natchitoches</city>
+				<state>LA</state>
+			</address>
+			<job>
+				Created web pages using HTML, CSS, and JavaScript for faculty, including graphic design and knowledge of web server maintenance.
+			</job>
+		</employment>
+	</experience>
+	<skills>
+		<skill>Over 5 years experience in contributing and compiling open source projects such as Apache Web Server, MySQL, PHP, OS Kernels, etc.</skill>
+		<skill>9 years programming experience with C/C++, Java, Visual Basic, Perl, PHP, JavaScript, HTML, and SQL including much experience with Visual C++, C#, and .NET Applications</skill>
+		<skill>Design, implementation, and maintenance of databases</skill>
+		<skill>Compiled, setup, and maintained DHCP, DNS, and Email servers on FreeBSD and other *nix operating systems</skill>
+		<skill>10 years computer experience (DOS, Windows, *nix and *BSD platforms)</skill>
+		<skill>50+ wpm qwerty, 20 wpm left-handed dvorak</skill>
+		<skill>Office experience: faxing, copying, filing, answering phone, etc.</skill>
+		<skill>Extensive academic and work experience in computer related domains: design patterns, software design, web development, networking, etc.</skill>
+		<skill>Outstanding background in mathematics</skill>
+		<skill>Solid background in physics</skill>
+	</skills>
+	<awards>
+		<award>Graduated with distinction in computer science (senior project: A JSP/ODBC Client/Server Multithread Registration Package)</award>
+		<award>First place in LSU sponsored computer programming competition.</award>
+		<award>Louisiana School Excellence Awards in Computer Science, Physics, and Mathematics</award>
+		<award>First place in Mathematics Association of America</award>
+	</awards>
+	<extracurricular>
+		<activity>Math Club - President</activity>
+		<activity>Computer Science Club - President</activity>
+		<activity>Mu Alpha Theta Club - Vice-President</activity>
+		<activity>Boy Scouts of America - Eagle Scout (4 palms)</activity>
+		<activity>Competition soccer and hockey</activity>
+		<activity>Tutoring</activity>
+	</extracurricular>
+	<courses>
+		<semester date="Fall 2001">
+			<course>Advanced Calculus I (Math 4035)</course>
+		</semester>
+	</courses>
+	<references>
+		<reference>
+			<name/>
+			<phone/>
+		</reference>
+	</references>
+</resume>
