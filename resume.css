@@ -13,7 +13,7 @@ html {
 
 .title {
 	text-transform: uppercase;
-	font-size: 7pt;
+	font-size: 8pt;
 }
 
 .subtitle {
@@ -23,6 +23,11 @@ html {
 
 .highlight {
 	font-weight: bold;
+}
+
+.name {
+	font-size: 12pt;
+	text-transform: uppercase;
 }
 
 ul {

@@ -4,10 +4,11 @@
 	<applicant>
 		<name>Sean Farley</name>
 		<address>
-			<street>PO Box 16102</street>
+			<building>Lockett Hall 375</building>
+			<university>Louisiana State University</university>
 			<city>Baton Rouge</city>
 			<state>LA</state>
-			<zip>70893</zip>
+			<zip>70803-4918</zip>
 		</address>
 		<phone>(225) 284-7436</phone>
 		<email>sean@seanfarley.org</email>
@@ -53,7 +54,7 @@
 		</institution>
 	</education>
 	<courses>
-		<course group="applied" dept="" number="XD-II">Fluid Dynamics and Computational Methods</course>		
+		<course group="applied" dept="CSC" number="XD-II">Fluid Dynamics and Computational Methods</course>		
 		<course group="applied" number="7320">Ordinary Differential Equations</course>
 		<course group="applied" number="7390">Finite Element Method: Analysis and Implementation</course>		
 		<course group="applied" number="7380">Elliptic Solvers: Advanced parallel implementation &amp; related topics</course>

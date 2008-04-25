@@ -24,7 +24,8 @@
 		<td align="center" colspan="2">
 		<span class="name"><xsl:value-of select="name"/></span><br/>
 		<span class="header">
-			<xsl:value-of select="address/street"/><br/>				
+			<xsl:value-of select="address/building"/><br/>
+			<xsl:value-of select="address/university"/><br/>				
 			<xsl:value-of select="address/city"/>, <xsl:value-of select="address/state"/> <xsl:value-of select="address/zip"/><br/>
 			<xsl:value-of select="phone"/><br/>
 			<xsl:value-of select="email"/><br/>
