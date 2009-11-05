@@ -1,0 +1,16 @@
+syntax:glob
+.svn
+.DS_*
+*.aux
+*.log
+*.pdfsync
+*.gz
+*.pdf
+*.toc
+*.bbl
+*.blg
+*.out
+*.table
+*.gnuplot
+*.nav
+*.snm
