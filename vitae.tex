@@ -1,18 +1,13 @@
 \documentclass[11pt,a4paper]{moderncv}
-\usepackage{tikz}
-
-% moderncv themes
-% \moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-\moderncvtheme[blue]{classic}                % idem
-
-% character encoding
-\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\moderncvtheme[blue]{classic}
 
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
-%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
-\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+\usepackage{tikz}
+\usepackage[utf8]{inputenc}
+
+% required when changes are made to page layout lengths
+\AtBeginDocument{\recomputelengths}
 
 \newcommand{\lsmsa}{LA School for Math, Science, and the Arts}
 \newcommand{\nat}{Natchitoches, LA}
@@ -35,7 +30,7 @@
 \extrainfo{http://seanfarley.org}
 % \photo[72pt]{photo}
 
-%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%\nopagenumbers{}
 
 
 %----------------------------------------------------------------------------------
@@ -60,11 +55,6 @@
 	\cventry{Summer 2005}{LSU Abroad Program}{Beijing Normal University}{Beijing, China}{}{}
 
 % section education (end)
-
-% \section{Master thesis}
-% \cvline{title}{\emph{Title}}
-% \cvline{supervisors}{Supervisors}
-% \cvline{description}{\small Short thesis abstract}
 
 \section{Experience} % (fold)
 \label{sec:experience}
