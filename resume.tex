@@ -1,24 +1,35 @@
 \documentclass[10pt]{article}
 \usepackage{charter}
-\usepackage{fullpage}
 \usepackage[colorlinks=true,hypertexnames=false,linkcolor=red,citecolor=blue]{hyperref}
 \usepackage{currvita}
-\usepackage{pdfsync}
+
+% Fullpage settings
+\topmargin  -0.5in  % distance to headers
+\headheight 0.2in % height of header box
+\headsep  0.3in % distance to top line
+\textheight 9.0in % height of text
+\footskip 0.3in % distance from bottom line
+
+% Horizontal alignment
+
+\oddsidemargin  0.in
+\evensidemargin 0.in
+\textwidth  6.5in
 
 % Better for lists with 1-2 items and short descriptions
 \newenvironment{sublist}{%
-	\begin{list}{}{%
-		\setlength{\itemsep}{0em}\setlength{\parsep}{0em}%
-		\setlength{\topsep}{0em}\setlength{\parskip}{0em}%
-	}%
+\begin{list}{}{%
+  \setlength{\itemsep}{0em}\setlength{\parsep}{0em}%
+  \setlength{\topsep}{0em}\setlength{\parskip}{0em}%
+  }%
 }%
 { \end{list} }
 
 % Better for lists with more than 2 items and/or long descriptions
 \newenvironment{subbulletlist}{%
-	\begin{list}{\labelitemii}{%
-		\setlength{\topsep}{\itemsep}\setlength{\parskip}{\parsep}%
-	}%
+\begin{list}{\labelitemii}{%
+  \setlength{\topsep}{\itemsep}\setlength{\parskip}{\parsep}%
+  }%
 }%
 { \end{list} }
 
@@ -30,17 +41,14 @@
 \newlength{\oldcvlabelsep}
 
 \newcommand{\name}{Sean Farley}
-\newcommand{\institute}{Louisiana State University}
-\newcommand{\dept}{Department of Mathematics}
+\newcommand{\institute}{Illinois Institute of Technology}
+\newcommand{\dept}{Department of Applied Mathematics}
 
 \begin{cv}{{\large \name}\\
-{\normalsize Louisiana State University, 
-Department of Mathematics\\
-Email: {\mdseries \href{mailto:sean@math.lsu.edu}
-	{sean@math.lsu.edu}} 
+{\normalsize \institute, \dept\\
+Email: {\mdseries \href{mailto:sfarley@iit.edu} {sfarley@iit.edu}} 
 \hfill Phone: {\mdseries 209-SEANFAR} \hfill 
-Web: {\mdseries \href{http://www.seanfarley.org/}
-	{www.seanfarley.org}}}
+Web: {\mdseries \href{http://www.seanfarley.org/} {www.seanfarley.org}}}
 }
 
 \setlength{\oldcvlabelwidth}{\cvlabelwidth}
@@ -49,56 +57,56 @@ Web: {\mdseries \href{http://www.seanfarley.org/}
 \setlength{\cvlabelwidth}{1em}
 
 \begin{cvlist}{Education}
-	\item \emph{Ph.D., Mathematics}, in-progress\\
-	\institute, GPA: 3.67/4.0
-	\item \emph{M.S., Mathematics}, May 2008\\ 
-	\institute, GPA: 3.62/4.0
-	\item \emph{B.S., Mathematics; minors in Physics and Chinese}, May 2006\\
-	\institute, GPA: 3.25/4.0
+\item \emph{Ph.D., Mathematics}, in-progress\\
+  \institute, GPA: 3.67/4.0
+\item \emph{M.S., Mathematics}, May 2008\\
+  \institute, GPA: 3.62/4.0
+\item \emph{B.S., Mathematics; minors in Physics and Chinese}, May 2006\\
+  \institute, GPA: 3.25/4.0
 \end{cvlist}
 
 \setlength{\cvlabelwidth}{0em}
 \setlength{\cvlabelsep}{\labelsep}
 \begin{cvlist}{Technical Experience}
 \item
-	\begin{itemize}\itemsep=0.25em
-	\item Graduate assistantship focused on assisting B.~Bourin in graduate courses
-		with writing support code in C/C++ and tutorial lectures. Also included
-		installation, configuration and administration of LDAP, http and svn
-		servers for a cluster. General departmental computer support: design of a
-		Kerberos-based authentication system.
-	\item Worked with H.~Zhang and L.~Curfman under a Givens Fellowship to add
-		PETSc time-stepping and preconditioners to a edge plasma simulation code from LLNL.
-	\item Undergraduate research included implementing parallel programming using MPI and PETSc;
-		structuring data, scatter and gather among processors; as well as working with a general
-		relativity research group that used OpenGL and CAVE implemented with C++ libraries to
-		utilize virtual reality aspects of the SGI ImmersaDesk on modeling binary stars.
-	\item Various undergraduate jobs included working with small teams to solve numerous business
-		and technical problems. Use of design patterns, databases, threads, security, web services in .NET,
-		and xml were highly used; designing online web applications with extensive database access using PHP,
-		creating graphics for web pages.
-	\end{itemize}
+  \begin{itemize}\itemsep=0.25em
+    \item Graduate assistantship focused on assisting B.~Bourin in graduate courses
+      with writing support code in C/C++ and tutorial lectures. Also included
+      installation, configuration and administration of LDAP, http and svn
+      servers for a cluster. General departmental computer support: design of a
+      Kerberos-based authentication system.
+    \item Worked with H.~Zhang and L.~Curfman under a Givens Fellowship to add
+      PETSc time-stepping and preconditioners to a edge plasma simulation code from LLNL.
+    \item Undergraduate research included implementing parallel programming using MPI and PETSc;
+      structuring data, scatter and gather among processors; as well as working with a general
+      relativity research group that used OpenGL and CAVE implemented with C++ libraries to
+      utilize virtual reality aspects of the SGI ImmersaDesk on modeling binary stars.
+    \item Various undergraduate jobs included working with small teams to solve numerous business
+      and technical problems. Use of design patterns, databases, threads, security, web services in .NET,
+      and xml were highly used; designing online web applications with extensive database access using PHP,
+      creating graphics for web pages.
+  \end{itemize}
 \end{cvlist}
 
 \begin{cvlist}{Technical Skills}
 \item
 \begin{itemize}\itemsep=0.25em
-	\item Over 5 years experience with building, maintaining, and programming on computing clusters
-	\item Over 10 years experience in open source projects such as Apache Web Server, MySQL, PHP, OS Kernels, etc.
-	\item 15 years programming experience with C/C++, Java, Visual Basic, Perl, PHP, JavaScript,
-		HTML, and SQL including much experience with Visual C++, C\#, and .NET Applications
-	\item Compiled, setup, and maintained DHCP, DNS, LDAP, Kerberos, Database and Email servers on
-		FreeBSD and other *nix operating systems
-	\item Extensive academic and work experience in computer related domains: design patterns,
-		software design, web development, networking, etc.
+  \item Over 5 years experience with building, maintaining, and programming on computing clusters
+  \item Over 10 years experience in open source projects such as Apache Web Server, MySQL, PHP, OS Kernels, etc.
+  \item 15 years programming experience with C/C++, Java, Visual Basic, Perl, PHP, JavaScript,
+    HTML, and SQL including much experience with Visual C++, C\#, and .NET Applications
+  \item Compiled, setup, and maintained DHCP, DNS, LDAP, Kerberos, Database and Email servers on
+    FreeBSD and other *nix operating systems
+  \item Extensive academic and work experience in computer related domains: design patterns,
+    software design, web development, networking, etc.
 \end{itemize}
 \end{cvlist}
 
 \begin{cvlist}{Extracurricular}
 \item
 \begin{itemize}\itemsep=0.25em
-	\item Math Club - President 2005-2006
-	\item Boy Scouts of America - Eagle Scout (4 palms)
+  \item Math Club - President 2005-2006
+  \item Boy Scouts of America - Eagle Scout (4 palms)
 \end{itemize}
 \end{cvlist}
 
