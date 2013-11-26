@@ -1,15 +1,12 @@
 \documentclass[11pt,a4paper]{moderncv}
 \moderncvtheme[blue]{classic}
 
-% adjust the page margins
-\usepackage[scale=0.8]{geometry}
-\usepackage{tikz}
-\usepackage[utf8]{inputenc}
-\usepackage[super]{nth}
-\usepackage{todonotes}
-
+% custom packages for moderncv
+\usepackage[scale=0.8]{geometry} % adjust the page margins
 \usepackage{biblatex}
 \addbibresource{publications.bib}
+
+\include{packages}
 
 % required when changes are made to page layout lengths
 \AtBeginDocument{\recomputelengths}
