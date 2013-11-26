@@ -8,9 +8,6 @@
 
 \include{packages}
 
-% required when changes are made to page layout lengths
-\AtBeginDocument{\recomputelengths}
-
 \newcommand{\lsmsa}{Louisiana School for Math, Science, and the Arts}
 \newcommand{\nat}{Natchitoches, LA}
 \newcommand{\lsu}{Louisiana State University}
@@ -28,11 +25,12 @@
 \newcommand{\bout}{\href{http://www-users.york.ac.uk/~bd512/bout}{\texttt{BOUT++}}}
 
 \AtBeginDocument{
-    \hypersetup{
-      colorlinks,
-      urlcolor=color1,
-      citecolor=color2,
-    }
+  \recomputelengths     % required when changes are made to page layout lengths
+  \hypersetup{
+    colorlinks,
+    urlcolor=color1,
+    citecolor=color2,
+  }
 }
 
 % personal data
