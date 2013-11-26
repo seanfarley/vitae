@@ -6,9 +6,6 @@
 \usepackage{biblatex}
 \addbibresource{publications.bib}
 
-\include{packages}
-\include{header}
-
 \AtBeginDocument{
   \recomputelengths     % required when changes are made to page layout lengths
   \hypersetup{
@@ -17,6 +14,9 @@
     citecolor=color2,
   }
 }
+
+\include{packages}
+\include{header}
 
 % personal data
 \firstname{Sean}
