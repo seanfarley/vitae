@@ -47,7 +47,7 @@
 \label{sec:education}
 
 % this crazy if block is due to moderncv's handling of blank lines
-\foreach \year/\degree/\school/\city/\subtitle in \education {
+\newforeach[expand list] \year/\degree/\school/\city/\subtitle in \education {
   \ifthenelse{\equal{\subtitle}{}}{%
     \cventry{\year}{\degree}{\school}{\city}{}{}
   }{%
