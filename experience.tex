@@ -1,0 +1,181 @@
+
+\def\coop{
+  %
+  Built extendable code in collaboration with with \hong~, \lois~, and
+  Lawrence Livermore National Laboratory physicists by adding robust
+  \petsc~solvers to \bout. This code has been successfully integrated into
+  \bout~and version 0.7 incorporates my work.
+  %
+}
+
+\def\givens{
+  %
+  Worked under \hong~and \lois~to add \petsc~preconditioners to \bout, writing
+  new code in C++.
+  %
+}
+
+\def\summer{
+  %
+  Wrote a finite difference and a $P_1$, $P_2$ finite element program for
+  solving elliptic equations using MPI and \petsc. The finite element code used
+  a custom implementation based on \petsc~distributed arrays. Key concepts
+  included structuring data, scatter/gather among processors, and linear
+  solvers.
+  %
+}
+
+\def\php{
+  %
+  Designed online web applications with extensive database access using PHP and
+  created graphics for web pages. Other duties included configuring hardware,
+  installing software, and teaching workshops for educators on Javascript, SQL,
+  and Adobe Photoshop 6.
+  %
+}
+
+\def\viz{
+  %
+  Worked with a general relativity research group that used OpenGL and CAVE to
+  implement C++ libraries to utilize 3D aspects of the SGI ImmersaDesk on
+  modeling binary stars.
+  %
+}
+
+\IfSubStr*{\jobname}{vitae}{
+  \def\gsoc{
+    %
+    Improved the recording feature (arbitrary selection of hunks upon
+    committing) of \href{http://mercurial.selenic.com}{Mercurial}. This summer
+    program provided a great educational process of learning the depths of
+    internal Mercurial code, specifically the
+    \href{http://selenic.com/hg/file/tip/mercurial/context.py}{\texttt{context}},
+    \href{http://selenic.com/hg/file/tip/mercurial/manifest.py}{\texttt{manifest}},
+    and
+    \href{http://selenic.com/hg/file/tip/mercurial/localrepo.py}{\texttt{localrepo}}
+    objects. The biggest hurdle of this project was tackling the refactoring
+    needed for the
+    \href{http://selenic.com/hg/file/c38c3fdc8b93/mercurial/localrepo.py\#l1458}{\texttt{status}}
+    and
+    \href{http://selenic.com/hg/file/c38c3fdc8b93/mercurial/localrepo.py\#l1149}{\texttt{commit}}
+    functions but I made substantial progress on both fronts.
+    %
+  }
+
+  \def\predoc{
+    %
+    Added framework for physics-based preconditioning, new mesh capabilities,
+    and advanced time-stepping methods to \bout~(BOUndary Turbulence), a
+    parallel edge turbulence framework for plasma fusion simulation. Improved
+    the build system and software organization. The majority of the work
+    involved improving meshing capabilities to add matrix preallocation for the
+    non-contiguous branch-cuts. In addition, robust and novel IMEX
+    (implicit-explicit) time-stepping methods were added giving the project
+    competitive performance results. Version 1.0 incorporates my
+    work. \cite{Dudson:2012wc}
+    %
+  }
+
+  \def\grad{
+    %
+    Assisted \blaise~by writing code, providing proofs, building and
+    maintaining a cluster, and helping with class work. One graduate level
+    class dealt with elliptic solvers ($\Delta u = 0$ for convex domains) and
+    made use of finite element code we'd developed the previous summer. In
+    class, we extended the code to work on solving edge detection problems
+    using the Mumford-Shah functional modeled with phase fields. Other duties
+    included helping the \dept's computer support team in the design of a
+    Kerberos-based authentication system for use with LDAP, http, and
+    Subversion authentication.
+    %
+  }
+
+  \def\teacher{
+    %
+    Taught around 100 students per semester College Algebra and Trigonometry as
+    the teacher of record. In addition to the standard responsibilities of
+    teaching (creating lesson plans, grading, etc.), my duties included assisting
+    students during weekly mandatory math labs that employed online educational
+    software.
+    %
+  }
+
+  \def\dotnet{
+    %
+    Worked with small teams to solve numerous business and technical problems
+    with a photography and photo printing company. The main product scheduled
+    photographers and allowed them to coordinate shooting a (mostly large) local
+    event. Our software eased the challenge of organizing and executing photo
+    shoots at multiple, distant events as well as pulling together masses of
+    photos, uploading them and posting selected ones automatically to a for sale
+    website. Used design patterns, databases, threads, security, web services,
+    and xml.
+    %
+    \newline\newline
+    %
+    During the immediate aftermath of Hurricane Katrina, our team volunteered to
+    help the Red Cross keep track of the thousands of newly arrived storm
+    refugees scattered across Baton Rouge. After a 72-hour coding sprint, we had
+    a functional program but due to legal constraints nothing was ever deployed
+    full scale. The project, however, allowed me to learn fuzzy text searching,
+    text indexing, and merging databases with high chances of collision.
+    %
+  }
+
+  \def\dynweb{
+    %
+    Designed and implemented web-based programs for students and faculty,
+    utilizing server side languages such as PHP, Java Server Pages, and Perl. My
+    most important focus was completing my area of ``Distinction,'' namely an
+    online application to register students for seminars.
+    %
+  }
+
+  \def\staticweb{
+    %
+    Created web pages using HTML, CSS, and JavaScript for faculty. Other duties
+    included graphic design and knowledge of web server maintenance.
+    %
+  }
+
+  \def\experience{
+    {6/2013--9/2013}/{Google Summer of Code Student}/{Mercurial Project}/{\chicago}/{\noexpand\gsoc},
+    {1/2010--5/2013}/{Predoctorate Research Assistant}/{\anl}/{\chicago}/{\noexpand\predoc},
+    {Summer 2009}/{Student Co-op}/{\anl}/{\chicago}/{\noexpand\coop},
+    {8/2006--12/2009}/{Graduate Assistant}/{\lsu}/{\br}/{\noexpand\grad},
+    {Summer 2008}/{Givens Internship}/{\anl}/{\chicago}/{\noexpand\givens},
+    {8/2007--5/2008}/{Undergraduate Math Teacher}/{\lsu}/{\br}/{\noexpand\teacher},
+    {Summer 2006}/{Research Programmer with \blaise}/{\lsu}/{\br}/{\noexpand\summer},
+    {6/2003--8/2006}/{.NET Programmer}/{Velocity Squared, LLC}/{\br}/{\noexpand\dotnet},
+    {8/2001--7/2002}/{PHP Programmer}/{Louisiana Department of Education}/{\br}/{\noexpand\php},
+    {8/2001--5/2002}/{Data Visualization Programmer with J.~Tohline}/{\lsu}/{\br}/{\noexpand\viz},
+    {8/2000--5/2001}/{Dynamic Web Programmer}/{\lsmsa}/{\nat}/{\noexpand\dynweb},
+    {8/1999--5/2000}/{Web Programmer}/{\lsmsa}/{\nat}/{\noexpand\staticweb}
+  }
+
+}{
+  \def\gsoc{}
+  \def\predoc{}
+  \def\grad{}
+  \def\teacher{}
+  \def\dotnet{}
+  \def\dynweb{}
+  \def\staticweb{}
+
+  \def\experience{
+    {6/2013--9/2013}/{Google Summer of Code Student}/{Mercurial Project}/{\chicago}/{\noexpand\gsoc},
+    {1/2010--5/2013}/{Predoctorate Research Assistant}/{\anl}/{\chicago}/{\noexpand\predoc},
+    {Summer 2009}/{Student Co-op}/{\anl}/{\chicago}/{\noexpand\coop},
+    {8/2006--12/2009}/{Graduate Assistant}/{\lsu}/{\br}/{\noexpand\grad},
+    {Summer 2008}/{Givens Internship}/{\anl}/{\chicago}/{\noexpand\givens},
+    {Summer 2006}/{Research Programmer with \blaise}/{\lsu}/{\br}/{\noexpand\summer},
+    {6/2003--8/2006}/{.NET Programmer}/{Velocity Squared, LLC}/{\br}/{\noexpand\dotnet},
+    {8/2001--7/2002}/{PHP Programmer}/{Louisiana Department of Education}/{\br}/{\noexpand\php},
+    {8/2001--5/2002}/{Data Visualization Programmer with J.~Tohline}/{\lsu}/{\br}/{\noexpand\viz},
+  }
+}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "vitae"
+%%% End:
