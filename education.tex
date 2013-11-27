@@ -1,14 +1,27 @@
-\newcommand{\education}{
+\def\educationbasic{
   {2010--present}/{Ph.D in Mathematics}/{\iit}/{\chicago}/{Thesis:
     Efficient numerical treatment for a boundary integral method on graphic
     processors.},
   {2006--2009}/{M.S. in Mathematics}/{\lsu}/{\br}/{},
-  {2001--2006}/{B.S. in Mathematics}/{\lsu}/{\br}/{Minors: \emph{Physics} and \emph{Chinese}},
+  {2001--2006}/{B.S. in Mathematics}/{\lsu}/{\br}/{Minors: \noexpand\emph{Physics} and \noexpand\emph{Chinese}}
+}
+
+\def\educationextra{
   {Summer 2005}/{LSU Abroad Program}/{Beijing Normal University}/{Beijing, China}/{},
   {1999--2001}/{LSMSA Diploma}/{\lsmsa}/{\nat}/{Distinction:
     A JSP/ODBC Client/Server Multithreaded Registration Package.}
 }
 
+\IfSubStr*{\jobname}{vitae}{
+  \def\education{
+    \educationbasic,
+    \educationextra
+  }
+}{
+  \def\education{
+    \educationbasic
+  }
+}
 %%% Local Variables: 
 %%% mode: latex
 %%% TeX-master: "vitae"
