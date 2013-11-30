@@ -47,13 +47,8 @@
 \section{Education}
 \label{sec:education}
 
-% this crazy if block is due to moderncv's handling of blank lines
 \newforeach[expand list] \year/\degree/\school/\city/\subtitle in \education {
-  \ifthenelse{\equal{\subtitle}{}}{%
-    \cventry{\year}{\degree}{\school}{\city}{}{}
-  }{%
-    \cventry{\year}{\degree}{\school}{\city}{}{\subtitle}
-  }
+  \cventry{\year}{\degree}{\school}{\city}{}{\subtitle}
 }
 
 \section{Experience}
