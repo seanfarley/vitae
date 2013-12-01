@@ -6,6 +6,7 @@
 \include{info}
 \include{interests}
 \include{education}
+\include{experience}
 
 \begin{document}
 \header{\MakeLowercase\myfirstname}{\MakeLowercase\mylastname}
@@ -38,5 +39,13 @@
 }
 \end{entrylist}
 
-\end{document}
+\section{experience}
+\label{sec:experience}
 
+\begin{entrylist}
+\newforeach[expand list] \year/\title/\org/\city/\desc in \experience {
+  \entry{\year}{\title}{\org}{\desc}
+}
+\end{entrylist}
+
+\end{document}
