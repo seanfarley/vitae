@@ -17,7 +17,17 @@
     functions but I made substantial progress on both fronts.
     %
   }
+}{
+  \def\gsoc{
+    %
+    Improved the recording feature (arbitrary selection of hunks upon
+    committing) and in-memory merging of
+    \href{http://mercurial.selenic.com}{Mercurial}.
+    %
+  }
+}
 
+\IfSubStr*{\jobname}{vitae}{
   \def\predoc{
     %
     Added framework for physics-based preconditioning, new mesh capabilities,
@@ -31,7 +41,29 @@
     work. \cite{Dudson:2012wc}
     %
   }
+}{
+  \def\predoc{
+    %
+    Improved the build system and added framework for new mesh capabilities,
+    matrix preallocation, and advanced time-stepping methods to \bout, a
+    framework for plasma fusion simulation.
+    %
+  }
+}
 
+\IfSubStr*{\jobname}{vitae}{
+  \def\coop{
+    %
+    Built extendable code in collaboration with with \hong~, \lois~, and
+    Lawrence Livermore National Laboratory physicists by adding robust
+    \petsc~solvers to \bout. This code has been successfully integrated into
+    \bout~and version 0.7 incorporates my work.
+    %
+  }
+}{
+}
+
+\IfSubStr*{\jobname}{vitae}{
   \def\grad{
     %
     Assisted \blaise~by writing code, providing proofs, building and
@@ -45,7 +77,34 @@
     Subversion authentication.
     %
   }
+}{
+  \def\grad{
+    %
+    Assisted \blaise~by writing code, providing proofs, building and
+    maintaining a cluster, building a Kerberos-based authentication system for
+    use with LDAP, http, and Subversion authentication, and helping with class
+    work.
+    %
+  }
+}
 
+\IfSubStr*{\jobname}{vitae}{
+  \def\givens{
+    %
+    Worked under \hong~and \lois~to add \petsc~preconditioners to \bout, writing
+    new code in C++.
+    %
+  }
+}{
+  \def\givens{
+    %
+    Worked under \hong~and \lois~to add \petsc~preconditioners to \bout, writing
+    new code in C++.
+    %
+  }
+}
+
+\IfSubStr*{\jobname}{vitae}{
   \def\teacher{
     %
     Taught around 100 students per semester College Algebra and Trigonometry as
@@ -55,7 +114,30 @@
     software.
     %
   }
+}{
+  \def\teacher{}
+}
 
+\IfSubStr*{\jobname}{vitae}{
+  \def\summer{
+    %
+    Wrote a finite difference and a $P_1$, $P_2$ finite element program for
+    solving elliptic equations using MPI and \petsc. The finite element code used
+    a custom implementation based on \petsc~distributed arrays. Key concepts
+    included structuring data, scatter/gather among processors, and linear
+    solvers.
+    %
+  }
+}{
+  \def\summer{
+    %
+    Wrote a finite element program for solving elliptic equations using MPI and
+    \petsc.
+    %
+  }
+}
+
+\IfSubStr*{\jobname}{vitae}{
   \def\dotnet{
     %
     Worked with small teams to solve numerous business and technical problems
@@ -77,49 +159,29 @@
     text indexing, and merging databases with high chances of collision.
     %
   }
-
-  \def\dynweb{
+}{
+  \def\dotnet{
+   %
+    Worked on an online scheduler for photographers that allowed them to
+    coordinate shooting an event. Our software eased the challenge of
+    organizing and executing photo shoots at multiple, distant events as well
+    as pulling together masses of photos, uploading them and posting selected
+    ones automatically to a for sale website. Used design patterns, databases,
+    threads, security, web services, and xml.
     %
-    Designed and implemented web-based programs for students and faculty,
-    utilizing server side languages such as PHP, Java Server Pages, and Perl. My
-    most important focus was completing my area of ``Distinction,'' namely an
-    online application to register students for seminars.
+    \newline\newline
     %
-  }
-
-  \def\staticweb{
-    %
-    Created web pages using HTML, CSS, and JavaScript for faculty. Other duties
-    included graphic design and knowledge of web server maintenance.
-    %
-  }
-
-  \def\coop{
-    %
-    Built extendable code in collaboration with with \hong~, \lois~, and
-    Lawrence Livermore National Laboratory physicists by adding robust
-    \petsc~solvers to \bout. This code has been successfully integrated into
-    \bout~and version 0.7 incorporates my work.
+    During the immediate aftermath of Hurricane Katrina, our team volunteered to
+    help the Red Cross keep track of the thousands of newly arrived storm
+    refugees scattered across Baton Rouge. After a 72-hour coding sprint, we had
+    a functional program but due to legal constraints nothing was ever deployed
+    full scale. The project, however, allowed me to learn fuzzy text searching,
+    text indexing, and merging databases with high chances of collision.
     %
   }
+}
 
-  \def\givens{
-    %
-    Worked under \hong~and \lois~to add \petsc~preconditioners to \bout, writing
-    new code in C++.
-    %
-  }
-
-  \def\summer{
-    %
-    Wrote a finite difference and a $P_1$, $P_2$ finite element program for
-    solving elliptic equations using MPI and \petsc. The finite element code used
-    a custom implementation based on \petsc~distributed arrays. Key concepts
-    included structuring data, scatter/gather among processors, and linear
-    solvers.
-    %
-  }
-
+\IfSubStr*{\jobname}{vitae}{
   \def\php{
     %
     Designed online web applications with extensive database access using PHP and
@@ -128,7 +190,16 @@
     and Adobe Photoshop 6.
     %
   }
+}{
+  \def\php{
+    %
+    Designed web apps with database access using PHP, HTML, javascript, and
+    SQL.
+    %
+  }
+}
 
+\IfSubStr*{\jobname}{vitae}{
   \def\viz{
     %
     Worked with a general relativity research group that used OpenGL and CAVE to
@@ -136,7 +207,41 @@
     modeling binary stars.
     %
   }
+}{
+  \def\viz{
+    %
+    Worked with a general relativity research group to visualize binary star
+    simulations with OpenGL on a
+    \href{http://en.wikipedia.org/wiki/Cave_automatic_virtual_environment}{CAVE}.
+    %
+  }
+}
 
+\IfSubStr*{\jobname}{vitae}{
+  \def\dynweb{
+    %
+    Designed and implemented web-based programs for students and faculty,
+    utilizing server side languages such as PHP, Java Server Pages, and Perl. My
+    most important focus was completing my area of ``Distinction,'' namely an
+    online application to register students for seminars.
+    %
+  }
+}{
+  \def\dynweb{}
+}
+
+\IfSubStr*{\jobname}{vitae}{
+  \def\staticweb{
+    %
+    Created web pages using HTML, CSS, and JavaScript for faculty. Other duties
+    included graphic design and knowledge of web server maintenance.
+    %
+  }
+}{
+  \def\staticweb{}
+}
+
+\IfSubStr*{\jobname}{vitae}{
   \def\experience{
     {6/2013--9/2013}/{Google Summer of Code Student}/{Mercurial Project}/{\chicago}/{\noexpand\gsoc},
     {1/2010--5/2013}/{Predoctorate Research Assistant}/{\anl}/{\chicago}/{\noexpand\predoc},
@@ -151,63 +256,10 @@
     {8/2000--5/2001}/{Dynamic Web Programmer}/{\lsmsa}/{\nat}/{\noexpand\dynweb},
     {8/1999--5/2000}/{Web Programmer}/{\lsmsa}/{\nat}/{\noexpand\staticweb}
   }
-
 }{
-  \def\gsoc{}
-  \def\predoc{}
-  \def\grad{}
-  \def\teacher{}
-  \def\dotnet{}
-  \def\dynweb{}
-  \def\staticweb{}
-
-  \def\coop{
-    %
-    Built extendable code in collaboration with with \hong, \lois, and
-    Lawrence Livermore National Laboratory physicists by adding robust
-    \petsc~solvers to \bout. This code has been successfully integrated into
-    \bout~and version 0.7 incorporates my work.
-    %
-  }
-
-  \def\givens{
-    %
-    Worked under \hong~and \lois~to add \petsc~preconditioners to \bout, writing
-    new code in C++.
-    %
-  }
-
-  \def\summer{
-    %
-    Wrote a finite difference and a $P_1$, $P_2$ finite element program for
-    solving elliptic equations using MPI and \petsc. The finite element code used
-    a custom implementation based on \petsc~distributed arrays. Key concepts
-    included structuring data, scatter/gather among processors, and linear
-    solvers.
-    %
-  }
-
-  \def\php{
-    %
-    Designed online web applications with extensive database access using PHP and
-    created graphics for web pages. Other duties included configuring hardware,
-    installing software, and teaching workshops for educators on Javascript, SQL,
-    and Adobe Photoshop 6.
-    %
-  }
-
-  \def\viz{
-    %
-    Worked with a general relativity research group that used OpenGL and CAVE to
-    implement C++ libraries to utilize 3D aspects of the SGI ImmersaDesk on
-    modeling binary stars.
-    %
-  }
-
   \def\experience{
     {06-09 2013}/{Google Summer of Code Student}/{Mercurial Project}/{\chicago}/{\noexpand\gsoc},
     {2010--2013}/{Predoctorate Research Assistant}/{\anl}/{\chicago}/{\noexpand\predoc},
-    {06-09 2009}/{Student Co-op}/{\anl}/{\chicago}/{\noexpand\coop},
     {2006--2009}/{Graduate Assistant}/{\lsu}/{\br}/{\noexpand\grad},
     {06-09 2008}/{Givens Internship}/{\anl}/{\chicago}/{\noexpand\givens},
     {06-09 2006}/{Research Programmer with \blaise}/{\lsu}/{\br}/{\noexpand\summer},
