@@ -114,6 +114,16 @@
 
 \printbibliography[title={Publications}]
 
+\begin{refsection}
+  \nocite{*}
+  \printbibliography[sorting=ddnt,env=publist,type=proceedings,title={Talks and Seminars}]
+\end{refsection}
+
+\begin{refsection}
+  \nocite{*}
+  \printbibliography[sorting=ddnt,env=publist,type=misc,title={Organized Workshops}]
+\end{refsection}
+
 \section{Research Experience}
 \label{sec:research_experience}
 
@@ -151,41 +161,6 @@
 
 \foreach \year/\award in \awards {
   \cvline{\year}{\award}
-}
-
-\subsection{Organized Workshops}
-\label{sec:workshops}
-
-\def\workshops{
-  {A Brief Overview of PETSc Capabilities that can be employed by \bout}/{\bout{} Workshop (Co-organizer)}/{Sept. \nth{14}, 2011},
-  {Net-Centric Development: Building Enterprise Services}/{\lsmsa}/{May \nth{15} - May \nth{20}, 2011},
-  {An Introduction to Parallel Programming with MPI}/{\lsmsa}/{Jan. \nth{4} - Jan. \nth{9}, 2010}}
-
-\foreach \title/\place/\time in \workshops {
-  \cvlistitem{``\title,'' \place, \time}
-}
-
-\subsection{Talks and Seminars}
-\label{sub:talks_and_seminars}
-
-\def\talks{
-  {\bout: Performance Characterization and Recent Advances in Design}/{\nth{22} International Conference on Numerical Simulations of Plasma}/{Sept. \nth{8}, 2011},
-  {\bout{} Current Status and Future Plans}/{FACETS Meeting}/{Feb. \nth{11}, 2010},
-  {An Introduction to Ti\emph{k}Z: Integrating Graphics within \LaTeX}/{SIAM
-    Student Seminar}/{Oct. \nth{30}, 2009},
-  {\bout{} Status and Suggestions: A Look at Building Extendable
-    Code}/{LLNL Physical and Life Sciences}/{Aug. \nth{17}, 2009},
-  {Progress in Parallel Implicit methods for Tokamak Edge Plasma Modeling}/
-  {H. Zhang, McInnes, T. Rognlien, M. Umansky and S. Farley, SIAM Conference on
-    Computational Science and Engineering (CSE09), Miami, FL}/{March \nth{4}, 2009},
-  {Parallel Programming: An Introduction to PETSc and Distributed Arrays}/{LSU
-    Math Seminar}/{Oct. \nth{30}, 2009},
-  {Basic Parallel Programming: An Introduction to Linux and MPI}/{LSU Math
-    Seminar}/{Oct. \nth{14}, 2009},
-  {C Introduction: Pointers and Memory Allocation}/{LSU Math Seminar}/{Oct. \nth{1}, 2008}}
-
-\foreach \title/\place/\time in \talks {
-  \cvlistitem{``\title,'' \place, \time}
 }
 
 \section{Technical Skills}
