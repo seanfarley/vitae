@@ -1,5 +1,3 @@
-\addbibresource{bibliography.bib}
-
 \newcommand{\lsmsa}{Louisiana School for Math, Science, and the Arts}
 \newcommand{\nat}{Natchitoches, LA}
 \newcommand{\lsu}{Louisiana State University}
@@ -16,6 +14,44 @@
 \newcommand{\petsc}{\href{http://mcs.anl.gov/petsc}{PETSc}}
 \newcommand{\bout}{\href{http://www-users.york.ac.uk/~bd512/bout}{\texttt{BOUT++}}}
 
+% biblatex settings
+\addbibresource{bibliography.bib}
+
+% Consider the whole date (year-month-day)
+% Sorting date (descending), name, title
+\DeclareSortingScheme{ddnt}{
+  \sort{
+    \field{presort}
+  }
+  \sort[final]{
+    \field{sortkey}
+  }
+  \sort[direction=descending]{
+    \field[strside=left,strwidth=4]{sortyear}
+    \field[strside=left,strwidth=4]{year}
+    \literal{9999}
+  }
+  \sort[direction=descending]{
+    \field[padside=left,padwidth=2,padchar=0]{month}
+    \literal{00}
+  }
+  \sort[direction=descending]{
+    \field[padside=left,padwidth=2,padchar=0]{day}
+    \literal{00}
+  }
+  \sort{
+    \field{sortname}
+    \field{author}
+    \field{editor}
+    \field{translator}
+    \field{sorttitle}
+    \field{title}
+  }
+  \sort{
+    \field{sorttitle}
+    \field{title}
+  }
+}
 %%% Local Variables: 
 %%% mode: latex
 %%% TeX-master: "vitae"
