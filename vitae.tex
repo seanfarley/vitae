@@ -22,6 +22,13 @@
 }
 % \nopagenumbers{}
 
+\defbibenvironment{publist}{
+  \renewbibmacro{begentry}{\begin{minipage}[t]{\listitemmaincolumnwidth}}
+  \renewbibmacro{finentry}{\finentry\end{minipage}}
+  \list{}{
+    \setlength{\leftmargin}{\hintscolumnwidth+\separatorcolumnwidth}
+  }
+}{\endlist}{\item\listitemsymbol}
 
 \firstname{\myfirstname}
 \familyname{\mylastname}
