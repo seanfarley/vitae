@@ -10,6 +10,7 @@
 \include{positions}
 \include{courses}
 \include{awards}
+\include{skills}
 
 % custom packages for moderncv
 \usepackage[scale=0.8]{geometry} % adjust the page margins
@@ -103,37 +104,8 @@
 \section{Technical Skills}
 \label{sec:technical_skills}
 
-\cvlistitem{Over 5 years experience with analysis (real, complex, functional,
-  numerical, partial differential equations, finite element, and some measure
-  theory) and modeling (Cahn-Hilliard, Ideal Magnetic-hydrodynamics, Stokes Flow,
-  and Mumford-Shah) equations}
-
-\cvlistitem{Over 5 years experience with writing numerical code with \petsc,
-  emphasizes on finite elements, difference, and volume methods; this includes
-  intimate knowledge of numerical linear algebra, robust solvers,
-  and preconditioning}
-
-\cvlistitem{Over 5 years experience with parallel programming with MPI,
-  including experience with CUDA, OpenCL, and some pthreads}
-
-\cvlistitem{Over 7 years experience with building, maintaining, and programming
-  on computing clusters}
-
-\cvlistitem{Over 10 years experience in \LaTeX{} with strong emphasis on Ti\emph{k}Z}
-
-\cvlistitem{Over 10 years of extensive academic and work experience in computer
-  related domains: scientific computing, data structures, design patterns,
-  software design, web development, and networking}
-
-\cvlistitem{Over 15 years experience in using open source projects such as
-  Apache Web Server, MySQL, PHP, Python, Mercurial, MacPorts, and Linux/BSD
-  kernels}
-
-\cvlistitem{Over 15 years programming experience with C/C++, Java, Visual
-  Basic, Perl, PHP, Python, JavaScript, HTML, SQL, Visual C++, and C\#}
-
-\cvlistitem{Over 15 years experience with compiling, setting up, and
-  maintaining DHCP, DNS, LDAP, kerberos authentication, database, and email
-  servers on FreeBSD and other *nix operating systems}
+\foreach \skill in \skills {
+  \cvlistitem{\skill}
+}
 
 \end{document}
