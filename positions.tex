@@ -1,0 +1,76 @@
+\IfSubStr*{\jobname}{vitae}{
+  \def\macports{
+    % 
+    What started out with me submitting fixes and bug reports for mostly
+    scientific and mathematics ports ended up with me being invited to the
+    \href{http://macports.org}{MacPorts} team as a permanent member. I now
+    maintain around 90 ports and have helped overhaul standardizing compiler
+    variants, something particularly helpful in the scientific computing
+    community because it provides a uniform compiler suite for desired packages.
+    % 
+  }
+}{
+  \def\macports{}
+}
+
+\IfSubStr*{\jobname}{vitae}{
+  \def\cluster{
+    % 
+    Built, setup, and administrated the \dept's 128 node computing cluster with
+    an Infiniband backbone for my advisor \xiaofan. This included configuring a
+    job queue, installing custom MPI, writing documentation, and teaching
+    research groups basics of parallel programming.
+    % 
+  }
+}{
+  \def\cluster{}
+}
+
+\IfSubStr*{\jobname}{vitae}{
+  \def\petscdesc{
+    % 
+    Initially, my work focused on integrating \petsc~on older physics-based code
+    for plasma fusion simulation. Learning about library maintenance (especially
+    linking issues) helped me disentangle a particularly difficult knot of 64-bit
+    integers and direct solvers (e.g. \texttt{MUMPS}, \texttt{SuiteSparse}, and
+    \texttt{SuperLU}). Specifically, I fixed linking with
+    \texttt{METIS}/\texttt{ParMETIS} and its dependents. As my pre-doc position
+    went on, this work expanded to include work on non-linear solvers, a major
+    refactoring of time-stepping methods (for implementing implicit-explicit
+    methods), and mentoring a student to add more options for a configuration
+    parser.
+    % 
+  }
+}{
+  \def\petscdesc{}
+}
+
+\IfSubStr*{\jobname}{vitae}{
+  \def\lsmsaaa{
+    % 
+    Brought up-to-date this organization's technology and communication
+    capabilities, thereby laying the groundwork for a successful campaign for an
+    amendment of our by-laws (the first since this association's incarnation)
+    that ended annual dues. Other duties include organizing teleconferences,
+    interfacing with the LSMSA Foundation, and helping to lead reunion weekend.
+    % 
+  }
+}{
+  \def\lsmsaaa{}
+}
+
+\IfSubStr*{\jobname}{vitae}{
+  \def\positions{
+    {1/2012--present}/{MacPorts Team Member}/{MacPorts Project}/{\chicago}/{\macports},
+    {8/2010--5/2012}/{Computing Cluster Administrator for \xiaofan}/{\iit}/{\chicago}/{\cluster},
+    {1/2010--present}/{PETSc Team Member}/{\anl}/{\chicago}/{\petscdesc},
+    {5/2009--present}/{Vice President}/{\lsmsa{} Alumni Association}/{\nat}/{\lsmsaaa}
+  }
+}{
+  \def\positions{}
+}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "vitae"
+%%% End: 
