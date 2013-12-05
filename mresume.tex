@@ -1,0 +1,59 @@
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}
+
+\include{packages}
+\include{header}
+\include{info}
+\include{interests}
+\include{education}
+\include{experience}
+
+% custom packages for moderncv
+\usepackage[scale=0.8]{geometry} % adjust the page margins
+
+% custom moderncv settings
+\AtBeginDocument{
+  \recomputelengths     % required when changes are made to page layout lengths
+  \hypersetup{
+    colorlinks,
+    urlcolor=color1,
+    citecolor=color2,
+  }
+}
+% \nopagenumbers{}
+
+\firstname{\myfirstname}
+\familyname{\mylastname}
+\title{\mytitle}
+\address{\myaddress}{\mycity}
+\phone{\myphone}
+\email{\myemail}
+\extrainfo{\mywebsite}
+
+% ----------------------------------------------------------------------------------
+% content
+% ----------------------------------------------------------------------------------
+
+\begin{document}
+\maketitle
+
+\section{Research Interests}
+\label{sec:research_interests}
+
+\cvline{}{\interests}
+
+\section{Education}
+\label{sec:education}
+
+\newforeach[expand list] \year/\degree/\school/\city/\subtitle in \education {
+  \cventry{\year}{\degree}{\school}{\city}{}{\subtitle}
+}
+
+\section{Experience}
+\label{sec:experience}
+
+\newforeach[expand list] \year/\title/\org/\city/\desc in \experience {
+  \cventry{\year}{\title}{\org}{\city}{}{\desc}
+}
+
+\end{document}
