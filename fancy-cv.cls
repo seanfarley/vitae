@@ -26,6 +26,8 @@
 \definecolor{purple}{HTML}{D3A4F9}
 \definecolor{red}{HTML}{FB4485}
 \definecolor{blue}{HTML}{6CE0F1}
+\definecolor{peach}{HTML}{FF7E71}
+\definecolor{bluepurple}{HTML}{6665FF}
 
 \ifdefined\@cv@print
   \colorlet{green}{gray}
@@ -33,6 +35,8 @@
   \colorlet{purple}{gray}
   \colorlet{red}{gray}
   \colorlet{blue}{gray}
+  \colorlet{peach}{gray}
+  \colorlet{bluepurple}{gray}
   \colorlet{fillheader}{white}
   \colorlet{header}{gray}
 \else
@@ -101,7 +105,9 @@
         red\or%
         orange\or%
         green\or%
-        purple\else%
+        purple\or%
+        peach\or%
+        bluepurple\or%
         headercolor\fi%
     } #1#2#3%
   }%
