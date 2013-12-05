@@ -1,0 +1,88 @@
+%!TEX TS-program = xelatex
+\documentclass[]{fancy-cv}
+
+\include{packages}
+\include{header}
+\include{info}
+\include{interests}
+\include{education}
+\include{experience}
+\include{positions}
+\include{courses}
+\include{awards}
+\include{skills}
+
+\begin{document}
+\header{\MakeLowercase\myfirstname}{\MakeLowercase\mylastname}
+       {\MakeLowercase\mytitle}
+
+\begin{aside}
+  \section{about}
+    \myaddress
+    \mycity
+    ~
+    \href{mailto:\myemail}{\myemail}
+    \href{\mywebsite}{\mywebsite}
+    \href{http://facebook.com/\myfb}{fb://\myfb}
+    \href{http://plug.google.com/\mygp}{google://\mygp}
+  \section{programming}
+    {\color{red} $\varheartsuit$} Python
+    C, D, C++
+    MPI, CUDA
+\end{aside}
+
+\section{interests}
+\MakeLowercase\interests
+
+\section{education}
+\label{sec:education}
+
+\begin{entrylist}
+  \newforeach[expand list] \year/\degree/\school/\city/\subtitle in \education {
+    \entry{\year}{\degree}{\school}{\subtitle}
+  }
+\end{entrylist}
+
+\section{experience}
+\label{sec:experience}
+
+\begin{entrylist}
+  \newforeach[expand list] \year/\title/\org/\city/\desc in \experience {
+    \entry{\year}{\title}{\org}{\desc}
+  }
+\end{entrylist}
+\section{Honorary Positions}
+\label{sec:honorary-positions}
+
+\begin{entrylist}
+  \foreach \year/\title/\org/\city/\desc in \positions {
+    \entry{\year}{\title}{\org}{\desc}
+  }
+\end{entrylist}
+
+\section{Publications}
+\label{sec:publications}
+
+\printbibsection{article}{Articles}
+\printbibsection{proceedings}{Talks and Seminars}
+\printbibsection{misc}{Organized Workshops}
+
+\section{Awards}
+\label{sec:awards}
+
+\begin{entrylist}
+  \foreach \year/\award/\sponsor/\cat in \awards {
+    \entry{\year}{\award}{\sponsor}{\cat}
+  }
+\end{entrylist}
+
+\section{Technical Skills}
+\label{sec:technical_skills}
+
+\begin{list}{}{\setlength{\leftmargin}{0pt}}
+  \foreach \skill in \skills {
+    \item{\skill}
+  }
+\end{list}
+
+\end{document}
