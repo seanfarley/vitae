@@ -34,6 +34,13 @@
   }
 }{\endlist}{\item\listitemsymbol}
 
+\newcommand{\printbibsection}[2]{
+  \begin{refsection}
+    \nocite{*}
+    \printbibliography[sorting=ddnt,env=publist,type=#1,title={#2}]
+  \end{refsection}
+}
+
 \firstname{\myfirstname}
 \familyname{\mylastname}
 \title{\mytitle}
@@ -75,20 +82,9 @@
   \cventry{\year}{\title}{\org}{\city}{}{\desc}
 }
 
-\begin{refsection}
-  \nocite{*}
-  \printbibliography[sorting=ddnt,env=publist,type=article,title={Publications}]
-\end{refsection}
-
-\begin{refsection}
-  \nocite{*}
-  \printbibliography[sorting=ddnt,env=publist,type=proceedings,title={Talks and Seminars}]
-\end{refsection}
-
-\begin{refsection}
-  \nocite{*}
-  \printbibliography[sorting=ddnt,env=publist,type=misc,title={Organized Workshops}]
-\end{refsection}
+\printbibsection{article}{Publications}
+\printbibsection{proceedings}{Talks and Seminars}
+\printbibsection{misc}{Organized Workshops}
 
 \section{Research Experience}
 \label{sec:research_experience}
