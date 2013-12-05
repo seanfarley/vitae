@@ -75,7 +75,10 @@
   \cventry{\year}{\title}{\org}{\city}{}{\desc}
 }
 
-\printbibliography[title={Publications}]
+\begin{refsection}
+  \nocite{*}
+  \printbibliography[sorting=ddnt,env=publist,type=article,title={Publications}]
+\end{refsection}
 
 \begin{refsection}
   \nocite{*}
