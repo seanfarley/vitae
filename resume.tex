@@ -26,8 +26,16 @@
     MPI, CUDA
 \end{aside}
 
-\section{interests}
-\MakeLowercase\interests
+\section{experience}
+\label{sec:experience}
+
+\begin{entrylist}
+\newforeach[expand list] \year/\title/\org/\city/\desc in \experience {
+  \entry{\year}{\title}{\org}{\desc}
+}
+\end{entrylist}
+
+\vspace{-1.5em}
 
 \section{education}
 \label{sec:education}
@@ -38,14 +46,7 @@
 }
 \end{entrylist}
 
-\vspace{-1.5em}
-\section{experience}
-\label{sec:experience}
-
-\begin{entrylist}
-\newforeach[expand list] \year/\title/\org/\city/\desc in \experience {
-  \entry{\year}{\title}{\org}{\desc}
-}
-\end{entrylist}
+\section{interests}
+\MakeLowercase\interests
 
 \end{document}
