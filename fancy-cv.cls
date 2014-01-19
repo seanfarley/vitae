@@ -101,13 +101,13 @@
   {%
     \color{%
       \ifcase\value{colorCounter}%
+        bluepurple\or%
+        green\or%
+        orange\or%
+        purple\or%
         blue\or%
         red\or%
-        orange\or%
-        green\or%
-        purple\or%
         peach\or%
-        bluepurple\or%
         headercolor\fi%
     } #1#2#3%
   }%
