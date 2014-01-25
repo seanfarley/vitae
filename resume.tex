@@ -5,30 +5,32 @@
   urlcolor=bluepurple
 }
 
+\usepackage{multicol}
+
 \include{packages}
 \include{header}
 \include{info}
 \include{interests}
 \include{education}
 \include{experience}
+\include{programming}
 
 \begin{document}
 \header{\MakeLowercase\myfirstname}{\MakeLowercase\mylastname}{software engineer}
 
 \begin{aside}
   \section{contact}
+    \href{mailto:\myemail}{\myemail}
+    ~
     \myphone
+    ~
     \myaddress
     \mycity
-    ~
-    \href{mailto:\myemail}{\myemail}
+  \section{website}
     \href{\mywebsite}{\mywebsite}
+  \section{social}
     \href{http://facebook.com/\myfb}{fb://\myfb}
     \href{http://plug.google.com/\mygp}{google://\mygp}
-  \section{programming}
-    Python
-    C, D, C++
-    MPI, CUDA
 \end{aside}
 
 \section{experience}
@@ -50,6 +52,12 @@
   \entry{\year}{\degree}{\school}{\subtitle}
 }
 \end{entrylist}
+
+\vspace{-1em}
+\section{programming}
+\begin{multicols}{4}
+  \programming
+\end{multicols}
 
 \section{interests}
 \MakeLowercase\interests
