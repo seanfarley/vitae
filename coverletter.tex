@@ -1,0 +1,48 @@
+%!TEX TS-program = xelatex
+\documentclass[]{fancy-cv}
+\hypersetup {
+  colorlinks=true,
+  urlcolor=bluepurple
+}
+
+\include{packages}
+\include{header}
+\include{info}
+
+\usepackage{blindtext}
+
+\begin{document}
+\header{\MakeLowercase\myfirstname}{\MakeLowercase\mylastname}{software engineer}
+
+\begin{aside}
+  \section{contact}
+    \href{mailto:\myemail}{\myemail}
+    ~
+    \myphone
+    ~
+    \myaddress
+    \mycity
+  \section{website}
+    \href{\mywebsite}{\mywebsite}
+  \section{social}
+    \href{http://facebook.com/\myfb}{fb://\myfb}
+    \href{http://plug.google.com/\mygp}{google://\mygp}
+\end{aside}
+
+\vspace{.8em}
+\large
+Widget Human Resources\\
+123 Polk Street\\
+Chicago, IL 60605\\
+\\
+\\
+Dear Widget Hiring Manager,
+
+\par\Blindtext[2]
+
+\vspace{1.5em}
+Sincerely,\\
+\\
+Sean Farley
+
+\end{document}
