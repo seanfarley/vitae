@@ -1,20 +1,24 @@
 \IfSubStr*{\jobname}{vitae}{
   \def\gsoc{
     %
-    Improved the recording feature (arbitrary selection of hunks upon
-    committing) of \href{http://mercurial.selenic.com}{Mercurial}. This summer
-    program provided a great educational process of learning the depths of
-    internal Mercurial code, specifically the
+    \setlength\parindent{24pt} \emph{Engineered deep refactor of the internal
+      representation of changesets in memory}.
+    \\
+    This work opened the way for improving the recording feature (arbitrary
+    selection of hunks upon committing) and in-memory rebasing for
+    \href{http://mercurial.selenic.com}{Mercurial}.  The biggest hurdle of this
+    project was tackling the refactoring needed for the
+    \href{http://selenic.com/hg/file/c38c3fdc8b93/mercurial/localrepo.py\#l1458}{\texttt{status}}
+    and
+    \href{http://selenic.com/hg/file/c38c3fdc8b93/mercurial/localrepo.py\#l1149}{\texttt{commit}}
+    functions. This summer program provided a great educational process of
+    learning the depths of internal Mercurial code, specifically the
     \href{http://selenic.com/hg/file/tip/mercurial/context.py}{\texttt{context}},
     \href{http://selenic.com/hg/file/tip/mercurial/manifest.py}{\texttt{manifest}},
     and
     \href{http://selenic.com/hg/file/tip/mercurial/localrepo.py}{\texttt{localrepo}}
-    objects. The biggest hurdle of this project was tackling the refactoring
-    needed for the
-    \href{http://selenic.com/hg/file/c38c3fdc8b93/mercurial/localrepo.py\#l1458}{\texttt{status}}
-    and
-    \href{http://selenic.com/hg/file/c38c3fdc8b93/mercurial/localrepo.py\#l1149}{\texttt{commit}}
-    functions but I made substantial progress on both fronts.
+    objects. This experience was successfully completed with over 127 patches
+    accepted.
     %
   }
 }{
