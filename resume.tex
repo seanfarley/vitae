@@ -32,6 +32,10 @@
     \href{http://facebook.com/\myfb}{fb://\myfb}
     \href{http://plug.google.com/\mygp}{google://\mygp}
     \href{http://www.linkedin.com/in/\mylinkedin}{linkedin://\mylinkedin}
+  \section{programming}
+    \newforeach[expand list] \lang in \programming {%
+      \lang
+    }%
 \end{aside}
 
 \section{experience}
@@ -43,7 +47,7 @@
 }
 \end{entrylist}
 
-\vspace{-1.5em}
+\vspace{-2.5em}
 
 \section{education}
 \label{sec:education}
@@ -55,11 +59,6 @@
 \end{entrylist}
 
 \vspace{-1em}
-\section{programming}
-\begin{multicols}{4}
-  \programming
-\end{multicols}
-
 \section{interests}
 \MakeLowercase\interests
 
