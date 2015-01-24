@@ -36,6 +36,10 @@
     \newforeach[expand list] \lang in \programming {%
       \lang
     }%
+  \section{interests}
+    \newforeach[expand list] \i in \interests {%
+      \MakeLowercase\i
+    }%
 \end{aside}
 
 \section{experience}
@@ -65,8 +69,5 @@
   \entry{2012--now}{Mercurial Developer}{}{}
   \entry{2012--now}{MacPorts Developer}{}{}
 \end{entrylist}
-
-\section{interests}
-\MakeLowercase\interests
 
 \end{document}
