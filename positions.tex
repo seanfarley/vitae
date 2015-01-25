@@ -1,4 +1,16 @@
 \IfSubStr*{\jobname}{vitae}{
+  \def\mercurial{
+    %
+    Partcipated in one Google Summer of Code and one contract which built good
+    community relations. I am now a common contributor and maintain two
+    extensions: hgsubversion and remotenames.
+    %
+  }
+}{
+  \def\mercurial{}
+}
+
+\IfSubStr*{\jobname}{vitae}{
   \def\macports{
     % 
     What started out with me submitting fixes and bug reports for mostly
@@ -61,6 +73,7 @@
 
 \IfSubStr*{\jobname}{vitae}{
   \def\positions{
+    {2012--now}/{Mercurial Developer}/{Mercurial Project}/{}/{\mercurial},
     {2012--now}/{MacPorts Team Member}/{MacPorts Project}/{}/{\macports},
     {2010--2012}/{Computing Cluster Administrator for \xiaofan}/{\iit}/{\chicago}/{\cluster},
     {2010--now}/{PETSc Team Member}/{\anl}/{\chicago}/{\petscdesc},
