@@ -14,6 +14,7 @@
 \include{education}
 \include{experience}
 \include{programming}
+\include{positions}
 
 \begin{document}
 \header{\MakeLowercase\myfirstname}{\MakeLowercase\mylastname}{\MakeLowercase\mytitle}
@@ -65,9 +66,9 @@
 \vspace{-1em}
 \section{opensource}
 \begin{entrylist}
-  \entry{2013--now}{Kallithea Co-founder}{}{\vspace{-1cm}}
-  \entry{2012--now}{Mercurial Developer}{}{\vspace{-1cm}}
-  \entry{2012--now}{MacPorts Developer}{}{\vspace{-1cm}}
+\newforeach[expand list] \year/\degree/\school/\city/\subtitle in \positions {
+  \entry{\year}{\degree}{\school}{\vspace{-1cm}}
+}
 \end{entrylist}
 
 \end{document}
