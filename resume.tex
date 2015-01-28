@@ -52,16 +52,16 @@
 }
 \end{entrylist}
 
-\vspace{-2em}
-
+\vspace{-1.1em}
 \section{opensource}
+
 \begin{entrylist}
 \newforeach[expand list] \year/\degree/\school/\city/\subtitle in \positions {
   \entry{\year}{\degree}{\school}{\subtitle}
 }
 \end{entrylist}
 
-\vspace{-2em}
+\vspace{-1.1em}
 \section{education}
 \label{sec:education}
 
@@ -70,5 +70,8 @@
   \entry{\year}{\degree}{\school}{\subtitle}
 }
 \end{entrylist}
+
+% this helps avoid having an overflow blank page at the end of the document
+\clearpage
 
 \end{document}
