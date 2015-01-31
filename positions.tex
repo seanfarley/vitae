@@ -21,12 +21,26 @@
   }
 }
 
-\def\mercurial{
-  %
-  I am a frequent contributor and maintain two extensions: hgsubversion and
-  remotenames. I have a deep understanding of the template engine and
-  changeset evolution.
-  %
+\IfSubStr*{\jobname}{vitae}{
+  \def\mercurial{
+    %
+    I am a frequent contributor and maintain two extensions: hgsubversion and
+    remotenames. I have a deep understanding of the template engine and
+    changeset evolution.
+    %
+  }
+}{
+  \def\mercurial{
+    %
+    \vspace{-4mm}
+    \begin{itemize}
+      \item Frequent contributor and maintainer of two extensions: hgsubversion
+      and remotenames
+      \item Deep understanding of the template engine, changeset evolution, and
+      hg-git
+    \end{itemize}
+    %
+  }
 }
 
 \IfSubStr*{\jobname}{vitae}{
