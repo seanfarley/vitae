@@ -1,10 +1,24 @@
-\def\kallithea{
-  %
-  I created an opensource Python clone of Bitbucket / GitHub that supports
-  both Git and Mercurial. I improved hi-res graphics, added Font Awesome,
-  integrated advanced Mercurial features, and designed obsolete changeset
-  graphlogs.
-  %
+\IfSubStr*{\jobname}{vitae}{
+  \def\kallithea{
+    %
+    Created an opensource Python clone of Bitbucket / GitHub that supports both
+    Git and Mercurial. I improved hi-res graphics, added Font Awesome,
+    integrated advanced Mercurial features, and designed evolved changeset
+    graphlogs.
+    %
+  }
+}{
+  \def\kallithea{
+    %
+    \vspace{-4mm}
+    \begin{itemize}
+      \item Created an opensource Python clone of Bitbucket / GitHub that
+      supports both Git and Mercurial
+      \item Integrated advanced Mercurial features and designed evolved graphlogs
+      \item Created hi-res graphics and scalable icons (Font Awesome)
+    \end{itemize}
+    %
+  }
 }
 
 \def\mercurial{
