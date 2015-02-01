@@ -1,6 +1,29 @@
 \newcommand\myindent{\setlength\parindent{18pt}}
 
 \IfSubStr*{\jobname}{vitae}{
+  \def\osi{
+    %
+    \myindent \emph{Designed and implemented a parser to generate an abstract
+      syntax tree in C\#}.
+    \\
+    I diagnosed a long--standing bug with incorrect parsing behavior in a
+    customer plugin. I fixed the bug by implementing a tokenizer to correctly
+    give the full AST. I worked with Microsoft solutions: Team Foundation
+    Server, Visual Studio, and PowerShell.
+    %
+  }
+}{
+  \def\osi{
+    %
+    \vspace{-4mm}
+    \begin{itemize}
+      \item Implemented a parser to generate a full abstract syntax tree
+    \end{itemize}
+    %
+  }
+}
+
+\IfSubStr*{\jobname}{vitae}{
   \def\fbcontractor{
     %
     \myindent \emph{Designed a namespace API to allow for managing tags,
@@ -291,7 +314,8 @@
 
 \IfSubStr*{\jobname}{vitae}{
   \def\experience{
-    {04-12 2014}/{Facebook Contractor}/{Mercurial Project}/{\sanfran}/{\noexpand\fbcontractor},
+    {2014--now}/{Software Developer}/{OSIsoft, LLC}/{\sanfran}/{\noexpand\osi},
+    {04-09 2014}/{Facebook Contractor}/{Mercurial Project}/{\chicago}/{\noexpand\fbcontractor},
     {06-09 2013}/{Google Summer of Code Student}/{Mercurial Project}/{\chicago}/{\noexpand\gsoc},
     {2010--2013}/{Graduate Research Assistant}/{\anl}/{\chicago}/{\noexpand\predoc},
     {06-09 2009}/{Student Co-op}/{\anl}/{\chicago}/{\noexpand\coop},
@@ -307,7 +331,8 @@
   }
 }{
   \def\experience{
-    {04-12 2014}/{Facebook Contractor}/{Mercurial Project}/{\sanfran}/{\noexpand\fbcontractor},
+    {2014--now}/{Software Developer}/{OSIsoft, LLC}/{\sanfran}/{\noexpand\osi},
+    {04-09 2014}/{Facebook Contractor}/{Mercurial Project}/{\chicago}/{\noexpand\fbcontractor},
     {06-09 2013}/{Google Summer of Code Student}/{Mercurial Project}/{\chicago}/{\noexpand\gsoc},
     {2010--2013}/{Graduate Research Assistant}/{\anl}/{\chicago}/{\noexpand\predoc},
     {2006--2009}/{Graduate Assistant}/{\lsu}/{\br}/{\noexpand\grad},
