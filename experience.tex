@@ -1,6 +1,28 @@
 \newcommand\myindent{\setlength\parindent{18pt}}
 
 \IfSubStr*{\jobname}{vitae}{
+  \def\bitbucket{
+    %
+    \myindent \emph{Improved Mercurial support at Bitbucket}.
+    \\
+    In this position, I hope to bridge the Mercurial and Bitbucket communities
+    to help develop an top-notch code hosting platform. While Mercurial updates
+    have been slow in the past, I plan on streamlining and keeping up to date
+    with the newest versions, while also adding long-awaited features.
+    %
+  }
+}{
+  \def\bitbucket{
+    %
+    \vspace{-4mm}
+    \begin{itemize}
+      \item Improved Mercurial support at Bitbucket
+    \end{itemize}
+    %
+  }
+}
+
+\IfSubStr*{\jobname}{vitae}{
   \def\osi{
     %
     \myindent \emph{Designed and implemented a parser to generate an abstract
